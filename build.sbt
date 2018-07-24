@@ -9,6 +9,7 @@ lazy val root = (project in file(".")).
     )),
     name := "akka-series-http",
     libraryDependencies ++= Seq(
+      "com.typesafe.akka" %% "akka-stream" % "2.5.12",
       "com.typesafe.akka" %% "akka-http"            % akkaHttpVersion,
       "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
       "org.apache.ignite" % "ignite-core"           % igniteVersion,
